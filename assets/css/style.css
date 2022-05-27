@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Overpass:wght@200;300;500;700&display=swap');
+
+body {
+    max-width: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+#banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/pexels-bruno-massao-3418613.jpg');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -999;
+}
+
+#banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav1:hover,
+.nav2:hover,
+.nav3:hover {
+    text-decoration: underline;
+}
+
+#company-title-div,
+#company-title-div2 {
+    opacity: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+#hr1,
+#hr2 {
+    border: white 2px solid;
+    opacity: 1;
+}
+
+.nav1 {
+    animation: navFade1 3s;
+    animation-delay: 5s;
+    -moz-animation: navFade1 3s;
+    -moz-animation-delay: 5s;
+    -webkit-animation: navFade1 3s;
+    -webkit-animation-delay: 5s;
+    -o-animation: navFade1 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.nav2 {
+    animation: navFade2 3s;
+    animation-delay: 6s;
+    -moz-animation: navFade2 3s;
+    -moz-animation-delay: 6s;
+    -webkit-animation: navFade2 3s;
+    -webkit-animation-delay: 6s;
+    -o-animation: navFade2 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.nav3 {
+    animation: navFade3 3s;
+    animation-delay: 7s;
+    -moz-animation: navFade3 3s;
+    -moz-animation-delay: 7s;
+    -webkit-animation: navFade3 3s;
+    -webkit-animation-delay: 7s;
+    -o-animation: navFade3 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navFade1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navFade2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navFade3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#company-title-div h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#company-title-div h3 {
+    color: white;
+    text-align: center;
+    letter-spacing: 6px;
+}
